@@ -1,0 +1,22 @@
+@import url('./typography.css');
+@import url('./font.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全域字體設定 */
+html, body {
+  font-family: "Noto Serif TC", "Cinzel" serif;
+}
+
+.dev-red{
+  outline: solid 1px red;
+}
+
+.dev-blue{
+  outline: solid 1px blue;
+}
+
+.dev-green{
+  outline: solid 1px green;
+}

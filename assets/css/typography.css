@@ -1,0 +1,13 @@
+@layer utilities {
+
+  /* 文型設定 */
+
+  /* 中文 */
+  /* 主要標題 */
+  .text-menu {
+    @apply font-Noto text-dt/menu;
+  }
+  .text-btn {
+    @apply font-Noto text-dt/btn;
+  }
+}

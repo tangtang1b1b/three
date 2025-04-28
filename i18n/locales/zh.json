@@ -1,0 +1,12 @@
+{
+  "template": "模板",
+  "title": "大樹使用者介面",
+  "items": {
+    "slider": "輪播",
+    "accordion": "手風琴",
+    "popup": "彈出視窗",
+    "form": "表單",
+    "button": "按鈕",
+    "gsap": "gsap"
+  }
+}

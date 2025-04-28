@@ -1,0 +1,12 @@
+{
+  "template": "Template",
+  "title": "Greattree UI",
+  "items": {
+    "slider": "Slider",
+    "accordion": "Accordion",
+    "popup": "Popup",
+    "form": "Form",
+    "button": "Button",
+    "gsap": "gsap"
+  }
+}
