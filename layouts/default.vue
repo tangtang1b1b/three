@@ -8,7 +8,7 @@ allData.value = data
 <template>
   <div>
     <LayoutHeader :data="allData?.menu" />
-    <main class="mx-auto max-w-[1920px] min-h-screen pt-[70px]">
+    <main class="mx-auto max-w-[1920px] pt-[70px]">
       <slot />
     </main>
     <LayoutFooter />

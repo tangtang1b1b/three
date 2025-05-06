@@ -7,6 +7,8 @@
     "popup": "彈出視窗",
     "form": "表單",
     "button": "按鈕",
-    "gsap": "gsap"
+    "gsap": "gsap",
+    "three": "three",
+    "plane": "plane"
   }
 }

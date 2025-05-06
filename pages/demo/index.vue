@@ -38,6 +38,16 @@ const { t } = useI18n()
           {{ t('items.gsap') }}
         </NuxtLinkLocale>
       </div>
+      <div class="w-full aspect-[4/3] flex justify-center items-center">
+        <NuxtLinkLocale to="/demo/three" class="size-full border rounded-xl flex justify-center items-center duration-300 hover:text-white hover:bg-txt-light">
+          {{ t('items.three') }}
+        </NuxtLinkLocale>
+      </div>
+      <div class="w-full aspect-[4/3] flex justify-center items-center">
+        <NuxtLinkLocale to="/demo/plane" class="size-full border rounded-xl flex justify-center items-center duration-300 hover:text-white hover:bg-txt-light">
+          {{ t('items.plane') }}
+        </NuxtLinkLocale>
+      </div>
     </div>
   </div>
 </template>
