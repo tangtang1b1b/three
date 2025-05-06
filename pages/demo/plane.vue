@@ -37,11 +37,19 @@ onMounted(async () => {
   renderer.setSize(window.innerWidth, window.innerHeight)
   threeContainer.value.appendChild(renderer.domElement)
 
-  const plane = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshStandardMaterial({ color: 0xffffff }))
+  const plane = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshStandardMaterial({ color: 0xff00ff }))
   plane.rotation.x = -Math.PI / 2
   plane.receiveShadow = true // 地板接收陰影
   scene.add(plane)
 
+  const box = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.1, 0.1), new THREE.MeshStandardMaterial({ color: 0xffffff }))
+  const line = new THREE.EdgesGeometry(box.geometry, 1)
+  const lineMaterial = new THREE.LineBasicMaterial({ color: 0x000000 })
+  const lineMesh = new THREE.LineSegments(line, lineMaterial)
+  box.add(lineMesh)
+  box.position.set(0, 0.05, 0)
+  box.castShadow = true // 物體投射陰影
+  scene.add(box)
   // 添加光源
   const light = new THREE.DirectionalLight(0xffffff, 1)
   light.position.set(-2, 2, 2)
