@@ -7,6 +7,8 @@
     "popup": "Popup",
     "form": "Form",
     "button": "Button",
-    "gsap": "gsap"
+    "gsap": "gsap",
+    "three": "three",
+    "plane": "plane"
   }
 }

@@ -23,7 +23,7 @@ onMounted(() => {
     <SEO />
     <NuxtLoadingIndicator />
     <NuxtLayout>
-      <NuxtPage :transition="page" />
+      <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
