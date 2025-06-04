@@ -159,14 +159,14 @@ onMounted(async () => {
   //物件與物理合體
   const plane = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), new THREE.MeshStandardMaterial({ color: 0xffffff }))
   plane.rotation.x = -Math.PI / 2
-  plane.position.y = 0.01
+  plane.position.y = 0.1
   plane.receiveShadow = true // 地板接收陰影
   scene.add(plane)
   const planeBody = new CANNON.Body({
     mass: 0, // 靜態物體
     position: new CANNON.Vec3(0, 0, 0), // 中心位置
     material: physicsMaterial, // 使用物理材質
-    shape: new CANNON.Box(new CANNON.Vec3(1, 1, 0.01)), // 添加平面形狀
+    shape: new CANNON.Box(new CANNON.Vec3(1, 1, 0.1)), // 添加平面形狀
   })
   planeBody.quaternion.setFromEuler(-Math.PI / 2, 0, 0) // 旋轉平面與視覺平面一致
   world.addBody(planeBody)
